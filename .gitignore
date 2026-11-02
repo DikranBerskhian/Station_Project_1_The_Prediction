@@ -1,0 +1,9 @@
+# Download data through KaggleHub; do not commit the large local dataset.
+*.csv
+!outputs/metrics_comparison.csv
+.ipynb_checkpoints/
+.venv/
+__pycache__/
+# Never commit authentication material.
+kaggle.json
+.env

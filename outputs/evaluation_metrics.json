@@ -1,0 +1,108 @@
+{
+  "dataset_handle": "ealaxi/paysim1",
+  "csv_filename": "PS_20174392719_1491204439457_log.csv",
+  "inspection": {
+    "rows": 6362620,
+    "columns": 11,
+    "duplicate_rows": 0,
+    "missing_values": {
+      "step": 0,
+      "type": 0,
+      "amount": 0,
+      "nameOrig": 0,
+      "oldbalanceOrg": 0,
+      "newbalanceOrig": 0,
+      "nameDest": 0,
+      "oldbalanceDest": 0,
+      "newbalanceDest": 0,
+      "isFraud": 0,
+      "isFlaggedFraud": 0
+    },
+    "fraud_counts": {
+      "0": 6354407,
+      "1": 8213
+    },
+    "transaction_type_counts": {
+      "CASH_OUT": 2237500,
+      "PAYMENT": 2151495,
+      "CASH_IN": 1399284,
+      "TRANSFER": 532909,
+      "DEBIT": 41432
+    }
+  },
+  "modeling_rows": 6362620,
+  "feature_columns": [
+    "step",
+    "amount",
+    "oldbalanceOrg",
+    "oldbalanceDest",
+    "type"
+  ],
+  "excluded_features": [
+    "nameOrig",
+    "nameDest",
+    "isFlaggedFraud",
+    "newbalanceOrig",
+    "newbalanceDest"
+  ],
+  "target": "isFraud",
+  "positive_label": 1,
+  "split": {
+    "train_rows": 5090096,
+    "test_rows": 1272524,
+    "test_size": 0.2,
+    "stratified": true,
+    "random_state": 42
+  },
+  "tree_parameters": {
+    "criterion": "gini",
+    "max_depth": 8,
+    "min_samples_leaf": 20,
+    "class_weight": "balanced",
+    "random_state": 42
+  },
+  "package_versions": {
+    "kagglehub": "1.0.3",
+    "pandas": "3.0.2",
+    "numpy": "2.4.3",
+    "plotly": "6.7.0",
+    "scikit-learn": "1.9.1"
+  },
+  "decision_tree": {
+    "accuracy": 0.9521745758822623,
+    "precision": 0.026165861152898248,
+    "recall": 0.9951308581862447,
+    "f1": 0.05099097132342622,
+    "confusion_matrix": [
+      [
+        1210030,
+        60851
+      ],
+      [
+        8,
+        1635
+      ]
+    ]
+  },
+  "always_non_fraud_baseline": {
+    "accuracy": 0.9987088652159016,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "confusion_matrix": [
+      [
+        1270881,
+        0
+      ],
+      [
+        1643,
+        0
+      ]
+    ]
+  },
+  "confusion_matrix_order": [
+    0,
+    1
+  ],
+  "test_set_used_for_tuning": false
+}

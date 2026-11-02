@@ -1,0 +1,13 @@
+{
+  "illustrative": true,
+  "known_true_label": null,
+  "features": {
+    "step": 100,
+    "amount": 200000.0,
+    "oldbalanceOrg": 200000.0,
+    "oldbalanceDest": 0.0,
+    "type": "TRANSFER"
+  },
+  "prediction": 1,
+  "prediction_label": "Fraud"
+}

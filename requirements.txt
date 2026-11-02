@@ -1,0 +1,9 @@
+kagglehub
+pandas
+numpy
+plotly
+scikit-learn
+jupyterlab
+nbformat
+nbclient
+ipykernel
